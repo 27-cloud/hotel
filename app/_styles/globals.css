@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme('colors.primary.900');
+    border-right-color: theme('colors.primary.200');
+    animation: rotate 1s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme('colors.primary.200');
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+/* For data picker */
+.rdp-root {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: #C69963 !important;
+  --rdp-range_middle-background-color: #C69963 !important;
+ /* --rdp-range_start-background: #C69963 !important;
+  --rdp-range_end-background: #C69963 !important; */
+  margin: 0 !important;
+}
+.rdp-dropdown option:disabled {
+  color: #9ca3af !important;  /* 浅灰色 */
+  background-color: #f3f4f6 !important;
+}
+.rdp-dropdown  {
+  color: #535659 !important;  /* 浅灰色 */
+  background-color: #f3f4f6 !important;
+}
+/* 未选中日期悬停 */
+.rdp-root .rdp-day:not(.rdp-selected):hover {
+  background-color: #C69963 !important;
+  color: white !important;
+  cursor: pointer !important;
+   border-radius: 50% !important;
+}
+/* 隐藏月份导航按钮 */
+.rdp-nav {
+  display: none !important;
+}
+.rdp-months {
+  gap: 1rem !important;  /* 默认可能更大，改小 */
+  padding: 1rem !important; 
+}
+.rdp-day {
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+}
+.rdp-day_button {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 50% !important; 
+  padding: 0 !important;  /* 移除按钮内边距 */
+  font-size: 17px !important;  /* 日期字体小一点 */
+}
