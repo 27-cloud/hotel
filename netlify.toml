@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "18"
   NEXT_PUBLIC_SUPABASE_URL = "https://sogbexgjtfosnddvluct.supabase.co"
-  NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_qFUSX3kmfBbm7yoSZpLpKg_IQv9qUg9"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNvZ2JleGdqdGZvc25kZHZsdWN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM4ODAzMTYsImV4cCI6MjA4OTQ1NjMxNn0._PvoJTMyseCevf7X1Z-HBCMAiyKZvoeL2DNpI1Dj_9c"
 
 [[redirects]]
   from = "/*"
