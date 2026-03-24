@@ -3,5 +3,11 @@
   publish = "out"
 
 [build.environment]
-  NEXT_PUBLIC_SUPABASE_URL = "https://the-wild-oasis-website.supabase.co"
+  NODE_VERSION = "18"
+  NEXT_PUBLIC_SUPABASE_URL = "https://sogbexgjtfosnddvluct.supabase.co"
   NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_qFUSX3kmfBbm7yoSZpLpKg_IQv9qUg9"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
